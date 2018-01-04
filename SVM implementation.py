@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+ import matplotlib.pyplot as plt
 from matplotlib import style
 import numpy as np
 
@@ -101,7 +101,7 @@ class Support_Vector_Machine:
         # decision boundary support vector hyperplane
         db1 = hyperplane(hyp_x_min, self.w, self.b, 0)
         db2 = hyperplane(hyp_x_max, self.w, self.b, 0)
-        self.ax.plot([hyp_x_min, hyp_x_max], [db1, db2],'y-')
+        self.ax.plot([hyp_x_min, hyp_x_max], [db1, db2],'y--')
 
         plt.show()
 
