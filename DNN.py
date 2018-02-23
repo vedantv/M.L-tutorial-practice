@@ -79,7 +79,7 @@ def create_feature_sets_and_labels(pos,neg,test_size = 0.1):
 
 
 if __name__ == '__main__':
-	train_x,train_y,test_x,test_y = create_feature_sets_and_labels('/path/to/pos.txt','/path/to/neg.txt')
+	train_x,train_y,test_x,test_y = create_feature_sets_and_labels('C:/Users/vedant1966/PycharmProjects/MLsentdex/pos.txt','C:/Users/vedant1966/PycharmProjects/MLsentdex/neg.txt')
 	# if you want to pickle this data:
-	with open('/path/to/sentiment_set.pickle','wb') as f:
+	with open('PycharmProjects\MLsentdex\_set.pickle','wb') as f:
 		pickle.dump([train_x,train_y,test_x,test_y],f)
