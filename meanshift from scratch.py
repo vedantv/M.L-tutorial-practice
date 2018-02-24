@@ -60,3 +60,15 @@ class Mean_Shift:
                 break
 
         self.centroids = centroids
+
+clf = Mean_Shift()
+clf.fit(X)
+
+centroids = clf.centroids
+
+plt.scatter(X[:,0], X[:,1], s=150)
+
+for c in centroids:
+    plt.scatter(centroids[c][0], centroids[c][1], color='k', marker='*', s=150)
+
+plt.show()
